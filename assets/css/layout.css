@@ -17,11 +17,7 @@ header, footer {
 
 main {
     flex-grow: 1;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 200px);
-    grid-auto-rows: 300px;
-    gap: 1rem;
-    justify-content: space-between;
+    margin: 2rem;
 }
 
 /* Should mimick Steam Library */
@@ -44,4 +40,16 @@ ul {
     list-style: inherit;
     margin: inherit;
     padding: inherit;
+}
+
+#content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-auto-rows: 300px;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+#app {
+    display: block;
 }

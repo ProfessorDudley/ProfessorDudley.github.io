@@ -58,3 +58,8 @@ sass:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+collections:
+  apps:
+    output: true
+    permalink: :path

@@ -2,21 +2,12 @@
 layout: default
 title: Home
 ---
-    <article>
-        <h2>1. Kanji Number Quiz</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt delectus molestiae aut
-            necessitatibus eaque rerum pariatur consequuntur vel. Neque!</p>
-        <a href="/kanji-number-quiz/">Launch</a>
-    </article>
-    <article>
-        <h2>1. Kanji Number Quiz</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt delectus molestiae aut
-            necessitatibus eaque rerum pariatur consequuntur vel. Neque!</p>
-        <a href="/kanji-number-quiz/">Launch</a>
-    </article>
-    <article>
-        <h2>1. Kanji Number Quiz</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt delectus molestiae aut
-            necessitatibus eaque rerum pariatur consequuntur vel. Neque!</p>
-        <a href="/kanji-number-quiz/">Launch</a>
-    </article>
+{% for app in site.apps %}
+<article>
+    <h2>{{ app.title }}</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sunt delectus molestiae aut
+        necessitatibus eaque rerum pariatur consequuntur vel. Neque!</p>
+    <a href="{{ app.url | replace: 'index', '' }}">Launch</a>
+</article>
+  
+{% endfor %}
