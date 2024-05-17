@@ -1,0 +1,47 @@
+body {
+    height: 100dvh;
+    margin: 0% 60px 0% 60px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+
+header, footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 4rem;
+    /* width: 100%; */
+}
+
+main {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-auto-rows: 300px;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+/* Should mimick Steam Library */
+article {
+    border-radius: 2pt;
+    /* Should change based on viewport width */
+    height: 100%;
+    /* padding-right: 56.25%; */
+}
+
+nav {
+    width: 100%;
+    display: contents;
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+ul {
+    list-style: inherit;
+    margin: inherit;
+    padding: inherit;
+}
