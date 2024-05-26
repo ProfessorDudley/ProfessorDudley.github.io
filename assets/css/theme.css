@@ -51,7 +51,7 @@ article:hover {
 }
 
 a {
-    color: inherit;
+    color: unset;
     text-decoration: none;
 }
 
@@ -62,4 +62,12 @@ a {
     top: 33%;
     left: -10%;
     opacity: 0.2;
+}
+
+#github-svg {
+    fill: black;
+}
+
+#github-svg:hover {
+    fill: darkgray;
 }
